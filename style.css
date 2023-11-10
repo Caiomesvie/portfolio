@@ -73,17 +73,26 @@ animation: float 1s ease-in-out infinite;
 display: flex;
 margin-top: 60px;
 align-items: center;
+justify-content: center;
 flex-direction: column;
+gap: 20px;
 }
 
 .contExp{
   display: flex;
   flex-direction: row;
-  gap: 150px;
   justify-content:center;
-  max-width: 800px;
+  align-items: center;
+  max-width: 1000px;
+  gap: 20px;
 }
 
+.exp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 
 .detalheExp{
   background-color: rgb(71, 13, 115);
