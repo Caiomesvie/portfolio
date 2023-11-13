@@ -34,6 +34,10 @@ header{
   flex-direction: row;
 }
 
+header h3{
+  text-align: justify;
+}
+
 .textHeader{
   padding-left: 1rem;
   padding-top: 50px;
@@ -201,6 +205,10 @@ animation: float 1s ease-in-out infinite ;
 .gradiente{
   background-size: 100%;
   width: 100%;
+}
+
+body p{
+  text-align: justify;
 }
 
 }
