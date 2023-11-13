@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: none;
+}
 body{
 font-family: 'Poppins', Arial, Helvetica, sans-serif;
 margin: 0;
@@ -14,7 +20,8 @@ hr{
 .gradiente{
 background-image: linear-gradient(45deg, #000000, #0f094d, #1e1e1e);
 animation: gradienteAnimation 3s infinite alternate;
-background-size: 500%;
+background-size: 200%;
+max-width: 100%;
 }
 
 @keyframes gradienteAnimation {
@@ -106,7 +113,6 @@ gap: 20px;
 }
 
 footer{
-margin-top: 25px;
   background-color: #000000;
   display: flex;
   justify-content: center;
@@ -150,12 +156,15 @@ header{
   }
 
   .textHeader{
-    font-size:x-large ;
+    font-size:large ;
   }
 
   .iconsHabilidades{
     min-width: 60px;
     min-height: 60px;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 10px;
   }
 
   .tecnologias{
@@ -177,11 +186,17 @@ animation: float 1s ease-in-out infinite ;
 
 .detalheExp{
   height: 10px;
-  width: 400px;
+  width: 300px;
 
 }
 
 .linkIcons{
   flex-direction: column;
 }
+
+.gradiente{
+  background-size: 100%;
+  width: 100%;
+}
+
 }
