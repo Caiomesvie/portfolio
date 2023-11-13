@@ -137,7 +137,7 @@ footer{
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
 
 hr{
   display: none;
@@ -156,6 +156,7 @@ header{
   }
 
   .textHeader{
+    margin: 30px;
     font-size:large ;
   }
 
