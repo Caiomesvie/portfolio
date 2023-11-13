@@ -22,7 +22,7 @@ background-size: 500%;
   100%{background-position-x: 100%;}
 }
 
-.header{
+header{
   display: flex;
   flex-direction: row;
 }
@@ -56,6 +56,7 @@ padding-top: 50px;
   display: flex;
   flex-direction: row;
   min-width: 125px;
+  min-height: 125px;
   justify-content: center;
 }
  
@@ -81,9 +82,11 @@ gap: 20px;
 .contExp{
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   max-width: 1000px;
+  margin: 40px;
   gap: 20px;
 }
 
@@ -113,7 +116,7 @@ margin-top: 25px;
 
 .linkIcons{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 40px;
   justify-content: center;
   align-items: center;
@@ -125,4 +128,60 @@ margin-top: 25px;
 .botaoFooter{
   width: 40px;
   margin:20px;
+}
+
+
+@media screen and (max-width: 800px){
+
+hr{
+  display: none;
+}
+
+header{
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+}
+
+.imgHeader{
+  border-radius: 30px;
+  margin: 30px;
+  max-width: 350px;
+  }
+
+  .textHeader{
+    font-size:x-large ;
+  }
+
+  .iconsHabilidades{
+    min-width: 60px;
+    min-height: 60px;
+  }
+
+  .tecnologias{
+animation: float 1s ease-in-out infinite ;
+  }
+
+
+  .botaoFooter{
+    animation: none;
+  }
+
+ .experiencias{
+ font-size: x-large;
+}
+
+.contExp{
+  flex-direction: column;
+}
+
+.detalheExp{
+  height: 10px;
+  width: 400px;
+
+}
+
+.linkIcons{
+  flex-direction: column;
+}
 }
