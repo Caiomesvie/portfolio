@@ -7,12 +7,14 @@
   <title>Portifólio Caio Mesquita</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
   <div class="gradiente">
     <header>
-      <img src="/portifolio/assets/fotoPrincipal.jpg" alt="imagem principal" class="imgHeader">
+      <img src="/assets/fotoPrincipal.jpg" alt="imagem principal" class="imgHeader">
       <div class="textHeader">
         <h1>Caio M. Vieira - Desenvolvedor de software</h1>
         <hr>
@@ -23,52 +25,114 @@
     </header>
 
     <main>
+
       <section class="habilidades">
         <h1>Habilidades</h1>
         <div class="iconsHabilidades">
-          <img src="/portifolio/assets/css3-original.svg" alt="img1" class="tecnologias">
-          <img src="/portifolio/assets/html5-original.svg" alt="img2" class="tecnologias">
-          <img src="/portifolio/assets/javascript-original.svg" alt="img3" class="tecnologias">
-          <img src="/portifolio/assets/react-original.svg" alt="img4" class="tecnologias">
-          <img src="/portifolio/assets/Github.svg" alt="img5" class="tecnologias">
-          </div>
-      </section>
-      <section class="experiencias">
-        <h1>Experiências</h1>
-        <div class="contExp">
-          <div class="exp">
-            <h3>Estágio TRF1</h3>
-            <p>Estágio iniciado no final de julho de 2023 no Tribunal Regional Federal da 1ª região na divisão de suporte ao usuário, lidando com antendimentos de chamados via sistema ITSM, homologação de softwares para uso no tribunal, licensas de softwares e levantamento de especificações de equipamentos.</p>
-          </div>
-          <span class="detalheExp"></span>
-          <div class="exp">
-            <h3>Projeto puma</h3>
-            <p>Participei da construção do projeto PUMA na matéria "métodos de desenvolvimento de software" em no semestre 1/2023 que consistia em uma plataforma de ensino feita especializadamente para os alunos e professores do curso de engenharia da produção da Univerisade de Brasília. O projeto foi concebido utilizando as ferramentas principais Node.js, docker e Vue.js</p>
-          </div>
-          <span class="detalheExp"></span>
-          <div class="exp">
-            <h3>Monitoria em Métodos de desenvolvimento de software</h3>
-            <p>Fui monitor da matéria Métodos de Desenvolvimento de Software na UnB, uma matéria que visa ensinar e aprofundar aos alunos a importância dos métodos de desenvolvimento e que a Engenharia de Software não se baseia somente em "codar".</p>
-          </div>
+          <img src="/assets/css3-original.svg" alt="img1" class="tecnologias">
+          <img src="/assets/html5-original.svg" alt="img2" class="tecnologias">
+          <img src="/assets/javascript-original.svg" alt="img3" class="tecnologias">
+          <img src="/assets/react-original.svg" alt="img4" class="tecnologias">
+          <a href="https://github.com/Caiomesvie"> <img src="/assets/Github.svg" alt="img5" class="tecnologias"></a>
         </div>
       </section>
-    </main>
+
+      <section class="experiencias">
+        <h1>Experiências</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h3>Estágio TRF1</h3>
+              <p>Estágio iniciado no final de julho de 2023 no Tribunal Regional Federal da 1ª região na divisão de suporte ao usuário, lidando com antendimentos de chamados via sistema ITSM, homologação de softwares para uso no tribunal, licensas de softwares e levantamento de especificações de equipamentos.</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://fga-eps-mds.github.io/2023-1-PUMA-Doc/">
+                <h3>Projeto puma</h3>
+                <p>Participei da construção do projeto PUMA na matéria "métodos de desenvolvimento de software" em no semestre 1/2023 que consistia em uma plataforma de ensino feita especializadamente para os alunos e professores do curso de engenharia da produção da Univerisade de Brasília. O projeto foi concebido utilizando as ferramentas principais Node.js, docker e Vue.js. <b>Clique aqui para acessar o projeto!</b></p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <h3>Monitoria em Métodos de desenvolvimento de software</h3>
+              <p>Fui monitor da matéria Métodos de Desenvolvimento de Software na UnB, uma matéria que visa ensinar e aprofundar aos alunos a importância dos métodos de desenvolvimento e que a Engenharia de Software não se baseia somente em "codar".</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://interacao-humano-computador.github.io/2023.2-SEI-GDF/#/">
+                <h3>Projeto Interação humano-computador</h3>
+                <p>Neste projeto participei de um grupo onde nosso objetivo foi de realizar uma avaliação de interação humano-computador na plataforma SEI!, bastante utilizada por servidores públicos, a fim de buscar melhorias de usabilidade possíveis de serem realizadas. <b>Clique aqui para acessar o projeto!</b></p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <h3>Monitoria em Desenho industrial Assistido por computador</h3>
+              <p>Fui monitor da matéria "DIAC", na Universidade de brasília, onde trabalhamos com a confecção de CAD's, produtos em 3D, utilizando a ferramenta CATIA V5 R21.</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 20,
+            loop: true,
+            slidesPerView: "3",
+            autoplay: {
+              delay: 6000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+
+
   </div>
-    <footer>
-      <div class="linkIcons">
-        <a href="https://www.linkedin.com/in/caio-mesquita-vieira-52a549218">
-          <img src="/portifolio/assets/linkedin-original.svg" alt="botãoLinkedin" class="botaoFooter">
-        </a>
-        <a href="https://github.com/Caiomesvie">
-          <img src="/portifolio/assets/Github.svg" alt="botãoGit" class="botaoFooter">
-        </a>
-        <a href="https://www.instagram.com/caio.mv_/">
-          <img src="/portifolio/assets/icons8-instagram.svg" alt="botãoinsta" class="botaoFooter">
+  </section>
+
+  <section class="ProjetosEmAndamento">
+    <h2>Projetos em Andamento</h2>
+    <img src="/assets/escavadeira.gif" alt="working in progress" class="gif">
+    <div class="boxConteudo">
+      <div class="projeto">
+        <a href="https://requisitos-de-software.github.io/2024.1-CarteiradeTrabalhoDigital/#/">
+          <h3>Requisitos-Carteira de Trabalho Digital</h3>
+          <h5>Na disciplina de Requisitos de software, estamos aplicando o conhecimento obtido sobre técnicas de elicitação de software no aplicativo da Carteira de trabalho Digital, aprimorando habilidades para o bom desenvolvimento de um software. <b>Clique e saiba mais!</b>
+          </h5>
         </a>
       </div>
-      <h3>Caioltwin@gmail.com</h3>
-      <h5 class="direitos">Alguns direitos reservados © </h5>
-    </footer>
+      <div class="projeto">
+        <a href="https://wildemberg-projects.github.io/Plants-Diseases/">
+          <h3>Machine Learning-Plants Diseases</h3>
+          <h5>
+            Um projeto da disciplina de Machine Learning da Universidade de Brasília, onde estamos em busca de aplicar os conceitos de machine learning a fim de colaborar na identificação de doenças em plantas. <b>Clique e saiba mais!</b>
+          </h5>
+        </a>
+      </div>
+    </div>
+  </section>
+  </main>
+  </div>
+  <footer>
+    <div class="linkIcons">
+      <a href="https://www.linkedin.com/in/caio-mesquita-vieira-52a549218">
+        <img src="/assets/linkedin-original.svg" alt="botãoLinkedin" class="botaoFooter">
+      </a>
+      <a href="https://github.com/Caiomesvie">
+        <img src="/assets/Github.svg" alt="botãoGit" class="botaoFooter">
+      </a>
+      <a href="https://www.instagram.com/caio.mv_/">
+        <img src="/assets/icons8-instagram.svg" alt="botãoinsta" class="botaoFooter">
+      </a>
+    </div>
+    <h3>Caioltwin@gmail.com</h3>
+    <h5 class="direitos">Alguns direitos reservados © </h5>
+    <h6>Design: Caio Mesquita Vieira</h6>
+  </footer>
+
 </body>
 
 </html>
