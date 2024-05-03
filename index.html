@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <img src="/portfolio/assets/fotoPrincipal.jpg" alt="imagem principal" class="imgHeader">
+    <img src="/assets/fotoPrincipal.jpg" alt="imagem principal" class="imgHeader">
     <div class="textHeader">
       <h1>Caio M. Vieira - Desenvolvedor de software</h1>
       <hr>
@@ -28,11 +28,11 @@
     <section class="habilidades">
       <h1>Habilidades</h1>
       <div class="iconsHabilidades">
-        <img src="/portfolio/assets/css3-original.svg" alt="img1" class="tecnologias">
-        <img src="/portfolio/assets/html5-original.svg" alt="img2" class="tecnologias">
-        <img src="/portfolio/assets/javascript-original.svg" alt="img3" class="tecnologias">
-        <img src="/portfolio/assets/react-original.svg" alt="img4" class="tecnologias">
-        <a href="https://github.com/Caiomesvie"> <img src="/portfolio/assets/Github.svg" alt="img5" class="tecnologias"></a>
+        <img src="/assets/css3-original.svg" alt="img1" class="tecnologias">
+        <img src="/assets/html5-original.svg" alt="img2" class="tecnologias">
+        <img src="/assets/javascript-original.svg" alt="img3" class="tecnologias">
+        <img src="/assets/react-original.svg" alt="img4" class="tecnologias">
+        <a href="https://github.com/Caiomesvie"> <img src="/assets/Github.svg" alt="img5" class="tecnologias"></a>
       </div>
     </section>
 
@@ -76,7 +76,12 @@
         var swiper = new Swiper(".mySwiper", {
           spaceBetween: 20,
           loop: true,
-          slidesPerView: "3",
+          slidesPerView: "1",
+          breakpoints: {
+            320: {
+              slidesPerView: "3"
+            }
+          },
           autoplay: {
             delay: 6000,
             disableOnInteraction: false,
@@ -94,7 +99,7 @@
 
     <section class="ProjetosEmAndamento">
       <h2>Projetos em Andamento</h2>
-      <img src="/portfolio/assets/escavadeira.gif" alt="working in progress" class="gif">
+      <img src="/assets/escavadeira.gif" alt="working in progress" class="gif">
       <div class="boxConteudo">
         <div class="projeto">
           <a href="https://requisitos-de-software.github.io/2024.1-CarteiradeTrabalhoDigital/#/">
@@ -118,13 +123,13 @@
   <footer>
     <div class="linkIcons">
       <a href="https://www.linkedin.com/in/caio-mesquita-vieira-52a549218">
-        <img src="/portfolio/assets/linkedin-original.svg" alt="botãoLinkedin" class="botaoFooter">
+        <img src="/assets/linkedin-original.svg" alt="botãoLinkedin" class="botaoFooter">
       </a>
       <a href="https://github.com/Caiomesvie">
-        <img src="/portfolio/assets/Github.svg" alt="botãoGit" class="botaoFooter">
+        <img src="/assets/Github.svg" alt="botãoGit" class="botaoFooter">
       </a>
       <a href="https://www.instagram.com/caio.mv_/">
-        <img src="/portfolio/assets/icons8-instagram.svg" alt="botãoinsta" class="botaoFooter">
+        <img src="/assets/icons8-instagram.svg" alt="botãoinsta" class="botaoFooter">
       </a>
     </div>
     <h3>Caioltwin@gmail.com</h3>

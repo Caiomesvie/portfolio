@@ -11,8 +11,8 @@ padding: 0;
 text-decoration: none;
 display: flex;
 flex-direction: column;
-color: white;
-background-color: #000000;
+color: rgb(106, 169, 187);
+background-color: #222;
 }
 
 hr{
