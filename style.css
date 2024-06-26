@@ -40,6 +40,7 @@ flex-wrap: wrap;
 header{
   display: flex;
   flex-direction: row;
+  margin-top: 80px;
 }
 .paragrafoHeader{
   color: #ddd;
