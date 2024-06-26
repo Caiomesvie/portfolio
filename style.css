@@ -73,7 +73,7 @@ gap: 20px;
 ********************************************************************************************************* */
 .swiper {
   width:90% ;
-  height:26.5rem ;
+  height:29.5rem ;
   display: flex;
   align-items: center;
   align-content: center;
@@ -83,10 +83,13 @@ gap: 20px;
   border-radius: 15px;
   flex-wrap: wrap;
 }
+
 .swiper a {
 color: black;
 text-decoration: none;
+
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 16px;
@@ -97,6 +100,11 @@ text-decoration: none;
   align-items: center;
 }
 
+.swiper-slide h3, p{
+padding-right: 10px;
+padding-left: 10px;
+padding-top: 10px;
+}
 
 .ProjetosEmAndamento{
 color: #04aaa0;
@@ -124,21 +132,31 @@ max-width: 500px;
   padding: 10px;
 }
 
-.gif{
-  margin-left: 30px;
-  max-width: 8rem;
-}
-
 .projeto:hover{
  border: 5px dashed #04aaa0;
 }
 
-.projeto a{
+.projeto a, h5{
   color: #ddd  ;
   text-decoration: none;
 }
-.projeto b{
+.projeto b, h3{
   color: #017987;
+}
+
+.loader {
+  border: 12px solid #ddd; 
+  border-top: 12px solid #017987;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 3s linear infinite;
+ margin-left: 12px; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 footer{
@@ -189,6 +207,14 @@ header{
     margin-top: 10px;
     font-size:large ;
   }
+  .loader {
+    border: 6px solid #ddd; 
+    border-top: 6px solid #017987;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
+
   .botaoFooter{
     animation: none;
   }
