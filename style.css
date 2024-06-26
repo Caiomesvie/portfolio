@@ -114,7 +114,7 @@ padding-top: 50PX;
 display: flex;
 flex-direction: column;
 align-items:center;
-padding-left: 20px;  
+justify-content: center;
 flex-wrap: wrap;
 }
 
@@ -122,6 +122,8 @@ flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 25px;
   padding: 20PX;
   max-width: 750px;
@@ -152,7 +154,6 @@ flex-wrap: wrap;
   width: 35px;
   height: 35px;
   animation: spin 3s linear infinite;
- margin-left: 12px; 
 }
 
 @keyframes spin {
